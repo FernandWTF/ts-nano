@@ -1,0 +1,30 @@
+{
+  "name": "ts-nano",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fernando Salazar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.3",
+    "ts-jest": "^25.3.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "ts-node src/",
+    "start:dev": "nodemon",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "dotenv": "^8.2.0"
+  }
+}
