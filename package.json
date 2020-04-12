@@ -14,7 +14,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "ts-node src/",
+    "start": "ts-node -r dotenv/config src/ ",
     "start:dev": "nodemon",
     "test": "jest"
   },
@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "@types/node": "^13.11.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "global": "^4.4.0"
   }
 }
